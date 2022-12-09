@@ -10,6 +10,7 @@ import com.tech.springboot.repository.PaymentRepository;
 import com.tech.springboot.service.OrderService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.UUID;
 
@@ -21,6 +22,7 @@ public class OrderServiceImpl implements OrderService {
     private final PaymentRepository paymentRepository;
 
     @Override
+    @Transactional
     public OrderResponse placeOrder(OrderRequest orderRequest) {
 
         Order order = orderRequest.getOrder();
