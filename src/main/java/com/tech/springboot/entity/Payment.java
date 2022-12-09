@@ -18,8 +18,8 @@ public class Payment {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String type;
-    private String cartName;
-    private String cartNumber;
+    private String cardName;
+    private String cardNumber;
     private int expiryYear;
     private int expiryMonth;
     private int cvc;

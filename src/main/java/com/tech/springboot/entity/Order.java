@@ -33,5 +33,5 @@ public class Order {
 
     @UpdateTimestamp
     private LocalDateTime lastUpdated;
-    private Long shoppingCartId;
+    private Long shoppingCardId;
 }
